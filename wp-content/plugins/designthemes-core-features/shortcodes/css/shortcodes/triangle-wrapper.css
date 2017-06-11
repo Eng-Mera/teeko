@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* Table of Content
+==================================================
+	1.0 - Transition
+	1.1 - Triangle
+	1.2 - Default Colors
+	1.3 - Responsive
+	1.4 - Skin Colors*/
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.0 - Transition
+	--------------------------------------------------------------*/
+	.dt-sc-triangle-wrapper .dt-sc-triangle-content:before { -webkit-transition:all 0.3s linear; -moz-transition:all 0.3s linear; -o-transition:all 0.3s linear; -ms-transition:all 0.3s linear; transition:all 0.3s linear; }
+
+	
+	
+	/*--------------------------------------------------------------
+	1.1 - Triangle
+	--------------------------------------------------------------*/
+	
+	.dt-sc-triangle-wrapper { clear: both; float:left; margin: 0; padding: 130px 0 120px; width:100%; }
+	.dt-sc-triangle-wrapper.alter { padding: 0; margin-bottom:-120px; }
+
+	.dt-sc-triangle-img { -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg); transform:rotate(45deg); display:inline-block; -webkit-transition:-webkit-transform 300ms ease-out; -moz-transition:-moz-transform 300ms ease-out; transition:transform 300ms ease-out; position:relative;  z-index:1; }
+	.alter .dt-sc-triangle-img { width:80px; -webkit-transform:rotate(225deg); -moz-transform:rotate(225deg); -ms-transform:rotate(225deg); -o-transform:rotate(225deg); transform:rotate(225deg); }
+	
+	.alter .dt-sc-triangle-img { position: relative; left: 300px; top: -128px; }
+	
+	
+	.alter .dt-sc-triangle-img .dt-sc-triangle-img-crop a { -webkit-transform:skew(-10deg, -10deg) rotate(-225deg); -moz-transform:skew(-10deg, -10deg) rotate(-225deg); -ms-transform:skew(-10deg, -10deg) rotate(-225deg);  -o-transform:skew(-10deg, -10deg) rotate(-225deg); transform:skew(-10deg, -10deg) rotate(-225deg); }
+	.dt-sc-triangle-img-crop { position:relative; width:395px; height:395px; margin:0; display:block; overflow:hidden; -webkit-transform:skew(10deg, 10deg); -moz-transform:skew(10deg, 10deg); -ms-transform:skew(10deg, 10deg);  -o-transform:skew(10deg, 10deg); transform:skew(10deg, 10deg); }
+	
+	.dt-sc-triangle-img-crop a { width:370px; height:370px; overflow:hidden; position:absolute; left:-45%; margin-top:36px; margin-left:36px; top:-45%; -webkit-transform:skew(-10deg, -10deg) rotate(-45deg); -moz-transform:skew(-10deg, -10deg) rotate(-45deg); -ms-transform:skew(-10deg, -10deg) rotate(-45deg); -o-transform:skew(-10deg, -10deg) rotate(-45deg); transform:skew(-10deg, -10deg) rotate(-45deg); }
+	.dt-sc-triangle-img-crop a:hover { opacity:1; }
+	.dt-sc-triangle-img-crop a img { position:relative; top:20%; z-index:1; }
+	
+	.dt-sc-triangle-content { margin-top:-323px; padding: 80px 0 0 0; position:relative; left: 52px; text-align:center; width: 350px; }
+	.dt-sc-triangle-content:before { content:""; position:absolute; left: 0; top: 0; width: 0; height: 0; border-left:175px solid transparent; border-right:175px solid transparent; border-top:250px solid; }
+	
+	
+	.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content { margin-top: 0; padding:130px 0 0 0; left: 26px; }
+	.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-top:0px; border-bottom:250px solid; }	
+	
+	.alter .dt-sc-triangle-img .dt-sc-triangle-img-crop a img { top:0; }	
+	
+	
+	.dt-sc-triangle-content h4, .dt-sc-triangle-content h5 { position:relative; z-index:1; color:#ffffff; }
+	.dt-sc-triangle-content h4 { margin-bottom: 10px; }
+	.dt-sc-triangle-content h5 { font-size: 12px; font-style:italic; margin-bottom: 0; }
+	
+	
+	
+	/*--------------------------------------------------------------
+	1.2 - Default Colors
+	--------------------------------------------------------------*/
+	.dt-sc-dark-bg .dt-sc-triangle-content h5 { color:rgba(255, 255, 255, 0.5); }
+	
+	.dt-sc-triangle-content:before { border-top-color:#040506; }
+	.dt-sc-triangle-wrapper.alter .dt-sc-triangle-content:before { border-bottom-color:#040506; }	
+	
+	/*--------------------------------------------------------------
+	1.4 - Skin Colors
+	--------------------------------------------------------------*/
+	.dt-sc-triangle-wrapper.alter:hover .dt-sc-triangle-content:before { border-bottom-color:#624dd6; }
+	.dt-sc-triangle-wrapper:hover .dt-sc-triangle-content:before { border-top-color:#624dd6; }

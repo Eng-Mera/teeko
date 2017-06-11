@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Table of Content
+==================================================
+	1.0  -  Donutchart */
+	
+	/*--------------------------------------------------------------
+	1.0 - Donutchart
+	--------------------------------------------------------------*/
+	.dt-sc-donutchart { text-align:center; margin:0px auto 30px; }
+	h5.dt-sc-donutchart-title { text-align:center; width:100%; font-size:18px; margin-bottom:0px; font-weight:600; }
+	
+	.dt-sc-donutchart-small { width:100px; margin:0px auto; }
+	.dt-sc-donutchart-medium { width:200px; margin:0px auto; }
+	.dt-sc-donutchart-large { width:300px; margin:0px auto; }
+	
+	.donutchart-text { font-weight:300 !important; }		
+	.dt-sc-donutchart-small .donutchart-text { font-size:24px !important; }	
+	.dt-sc-donutchart-medium .donutchart-text { font-size:40px !important; }	
+	.dt-sc-donutchart-large .donutchart-text { font-size:50px !important; }	
+	
+	.dark-bg .donutchart-text { color:#ffffff; }
